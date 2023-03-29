@@ -16,3 +16,4 @@ git diff origin/master (Obtiene las diferencias entre el primer repositorio que 
 git merge (Fusiona repositorios, si solo es un elemento, por ejemplo git merge branch2, incluye el branch2 en el branch seleccionado, si son 2 por ejemplo git merge origin/master , incluye el primer elemento en el segundo)
 git pull origin (Combinacion entre fetch y merge para importar las actualizaciones)
 En caso de una interferencia entre modificaciones (Supongamos que yo genero un branch, luego otro usuario hace un commit y push, y yo realice modificaciones fuera de ese commit, debo hacer git stash para separar esas modificaciones, luego git rebase para obtener la actualizacion enviada por el/los usuarios, luego git stash pop. Luego desde VSCode, se debe acceder al fichero en conflicto, y se puede hacer un merge seleccionando las partes del fichero modificado por el otro usuario,y las partes del fichero modificadas por mi, y luego se hace un Push para finalizar
+Conflicto propio
