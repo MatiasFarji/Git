@@ -15,6 +15,7 @@ git fetch origin (Obtiene las actualizaciones del repositorio en linea, paso obl
 git diff origin/master (Obtiene las diferencias entre el primer repositorio que es en linea, y el segundo,que es local)
 git merge (Fusiona repositorios, si solo es un elemento, por ejemplo git merge branch2, incluye el branch2 en el branch seleccionado, si son 2 por ejemplo git merge origin/master , incluye el primer elemento en el segundo)
 git pull origin (Combinacion entre fetch y merge para importar las actualizaciones)
+git checkout 9cb956817693a96f2192bed50db23f3d4d6e0220 . (Incluido el espacio y el punto, se restaura un commit anterior desde el hash)
 En caso de una interferencia entre modificaciones (Supongamos que yo genero un branch, luego otro usuario hace un commit y push:
 -Yo tengo que hacer un git fetch para obtener esa actualizacion de forma local en el fichero master
 -Debo hacer checkout al branch en el cual hice la modificacion, y debo hacer git stash para separar esas modificaciones desde el branch
