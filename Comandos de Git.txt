@@ -23,4 +23,3 @@ En caso de una interferencia entre modificaciones (Supongamos que yo genero un b
 -Luego desde VSCode, se debe acceder al fichero en conflicto, y se puede hacer un merge seleccionando las partes del fichero modificado por el otro usuario,y las partes del fichero modificadas por mi.
 -Por penultimo paso, se traslada todo al fichero master local, accediendo con un checkout a este, y haciendo merge con el fichero branch en conflicto
 -Finalmente, se hace un Push -f origin master para finalizar
-Se crea un conflicto online
