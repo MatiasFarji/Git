@@ -9,9 +9,9 @@ git status (Muestra los archivos que faltan agregar con commit, o eliminarlos)
 git remote add origin "URL del repositorio git" (Agrega la fuente del repositorio en GitHub para poder modificarlo)
 git push --set-upstream origin + nombre del branch (master) para enviar los archivos a Github
 git push -u origin branch (Otra forma de hacer el push para enviar los archivos a Github
+git push -f origin master (Requerido para enviar directo al master de Github)
 git add README.md (Agrega un archivo de comentarios sobre el master)
 git fetch origin (Obtiene las actualizaciones del repositorio en linea, paso obligatorio para luego merge)
 git diff origin/master (Obtiene las diferencias entre el primer repositorio que es en linea, y el segundo,que es local)
 git merge (Fusiona repositorios, si solo es un elemento, por ejemplo git merge branch2, incluye el branch2 en el branch seleccionado, si son 2 por ejemplo git merge origin/master , incluye el primer elemento en el segundo)
 git pull origin (Combinacion entre fetch y merge para importar las actualizaciones)
-f12345675
