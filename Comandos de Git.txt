@@ -14,4 +14,4 @@ git fetch origin (Obtiene las actualizaciones del repositorio en linea, paso obl
 git diff origin/master (Obtiene las diferencias entre el primer repositorio que es en linea, y el segundo,que es local)
 git merge (Fusiona repositorios, si solo es un elemento, por ejemplo git merge branch2, incluye el branch2 en el branch seleccionado, si son 2 por ejemplo git merge origin/master , incluye el primer elemento en el segundo)
 git pull origin (Combinacion entre fetch y merge para importar las actualizaciones)
-f12
+f12345675
