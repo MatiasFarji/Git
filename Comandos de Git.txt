@@ -1,0 +1,17 @@
+git init (En la carpeta de inicializacion, si ya existe se continua)
+git add (-A para agregar todo, o el nombre del directorio o archivo para algo especifico)
+git commit -m (Para confirmar las modificaciones, luego del -m se escribe un mensaje de registro para el log)
+git log (Muestra los movimientos realizados, con sus respectivos mensajes)
+dir (Muestra los archivos que estan en la carpeta, inclusive los que no se agregaron con commit)
+git branch + nombre (Crea una copia del branch seleccionado, para modificarlo sin modificar el original)
+git checkout + nombre del branch (Selecciona otro branch, si no existe lo crea)
+git status (Muestra los archivos que faltan agregar con commit, o eliminarlos)
+git remote add origin "URL del repositorio git" (Agrega la fuente del repositorio en GitHub para poder modificarlo)
+git push --set-upstream origin + nombre del branch (master) para enviar los archivos a Github
+git push -u origin branch (Otra forma de hacer el push para enviar los archivos a Github
+git add README.md (Agrega un archivo de comentarios sobre el master)
+git fetch origin (Obtiene las actualizaciones del repositorio en linea, paso obligatorio para luego merge)
+git diff origin/master (Obtiene las diferencias entre el primer repositorio que es en linea, y el segundo,que es local)
+git merge (Fusiona repositorios, si solo es un elemento, por ejemplo git merge branch2, incluye el branch2 en el branch seleccionado, si son 2 por ejemplo git merge origin/master , incluye el primer elemento en el segundo)
+git pull origin (Combinacion entre fetch y merge para importar las actualizaciones)
+f12
