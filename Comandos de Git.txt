@@ -15,4 +15,11 @@ git fetch origin (Obtiene las actualizaciones del repositorio en linea, paso obl
 git diff origin/master (Obtiene las diferencias entre el primer repositorio que es en linea, y el segundo,que es local)
 git merge (Fusiona repositorios, si solo es un elemento, por ejemplo git merge branch2, incluye el branch2 en el branch seleccionado, si son 2 por ejemplo git merge origin/master , incluye el primer elemento en el segundo)
 git pull origin (Combinacion entre fetch y merge para importar las actualizaciones)
-En caso de una interferencia entre modificaciones (Supongamos que yo genero un branch, luego otro usuario hace un commit y push, Yo tengo que hacer un git fetch para obtener esa actualizacion de forma local), y yo realice modificaciones fuera de ese commit, debo hacer git stash para separar esas modificaciones desde el branch, luego git rebase master para obtener la actualizacion enviada por el/los usuarios, luego cambiar al branch, y hacer git stash pop. Luego desde VSCode, se debe acceder al fichero en conflicto, y se puede hacer un merge seleccionando las partes del fichero modificado por el otro usuario,y las partes del fichero modificadas por mi, y luego se hace un Push para finalizar
+En caso de una interferencia entre modificaciones (Supongamos que yo genero un branch, luego otro usuario hace un commit y push:
+-Yo tengo que hacer un git fetch para obtener esa actualizacion de forma local en el fichero master
+-Debo hacer checkout al branch en el cual hice la modificacion, y debo hacer git stash para separar esas modificaciones desde el branch
+-Luego git rebase master, tambien desde el branch, para obtener la actualizacion enviada por el/los usuarios
+-Hacer git stash pop (Tambien desde el fichero branch)
+-Luego desde VSCode, se debe acceder al fichero en conflicto, y se puede hacer un merge seleccionando las partes del fichero modificado por el otro usuario,y las partes del fichero modificadas por mi.
+-Por penultimo paso, se traslada todo al fichero master local, accediendo con un checkout a este, y haciendo merge con el fichero branch en conflicto
+-Finalmente, se hace un Push -f origin master para finalizar
